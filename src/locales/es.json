@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Innovación en cada línea de código",
+    "subtitle": "Transformamos ideas en soluciones digitales que impulsan el futuro de tu negocio",
+    "cta": "Explora Nuestras Soluciones"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "web": {
+      "title": "Desarrollo Web",
+      "description": "Aplicaciones web modernas y escalables construidas con las últimas tecnologías"
+    },
+    "mobile": {
+      "title": "Desarrollo Móvil",
+      "description": "Soluciones nativas y multiplataforma que destacan en el mercado"
+    },
+    "consulting": {
+      "title": "Consultoría IT",
+      "description": "Estrategias tecnológicas personalizadas para optimizar tu negocio"
+    }
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "description": "Somos un equipo de desarrolladores apasionados por la innovación y la excelencia técnica. Nuestra misión es crear soluciones que no solo resuelvan problemas, sino que también impulsen el crecimiento y la transformación digital de nuestros clientes."
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Cuéntanos sobre tu proyecto",
+    "submit": "Enviar Mensaje"
+  },
+  "footer": {
+    "copyright": "© 2025 LatamCodeAI. Todos los derechos reservados."
+  }
+} 
