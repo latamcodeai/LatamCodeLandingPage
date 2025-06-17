@@ -36,23 +36,5 @@ export const teamMembers: TeamMemberType[] = [
     skills: ["JavaScript", "React", "Node.js", "MongoDB", "GraphQL"],
     linkedin: "https://linkedin.com/in/ema-dev",
     github: "https://github.com/ema-dev"
-  },
-  {
-    name: "Martin",
-    experience: 8,
-    role: "DevOps Engineer",
-    image: "/images/team/martin2.jpg",
-    skills: ["Docker", "Kubernetes", "AWS", "Terraform", "Jenkins"],
-    linkedin: "https://linkedin.com/in/martin2-dev",
-    github: "https://github.com/martin2-dev"
-  },
-  {
-    name: "Nico",
-    experience: 6,
-    role: "Mobile Developer",
-    image: "/images/team/nico.jpg",
-    skills: ["React Native", "Swift", "Kotlin", "Firebase", "Redux"],
-    linkedin: "https://linkedin.com/in/nico-dev",
-    github: "https://github.com/nico-dev"
   }
 ];
