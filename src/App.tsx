@@ -14,16 +14,16 @@ const App: React.FC = () => {
         <div className="logo">LatamCodeAI</div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <ul className="nav-links">
-            <li><a href="#inicio">{t('nav.home')}</a></li>
-            <li><a href="#servicios">{t('nav.services')}</a></li>
-            <li><a href="#nosotros">{t('nav.about')}</a></li>
-            <li><a href="#contacto">{t('nav.contact')}</a></li>
+            <li><a href="#home">{t('nav.home')}</a></li>
+            <li><a href="#services">{t('nav.services')}</a></li>
+            <li><a href="#about">{t('nav.about')}</a></li>
+            <li><a href="#contact">{t('nav.contact')}</a></li>
           </ul>
           <LanguageSelector />
         </div>
       </nav>
 
-      <section id="inicio" className="hero">
+      <section id="home" className="hero">
         <div className="hero-content">
           <h1>{t('hero.title')}</h1>
           <p>{t('hero.subtitle')}</p>
@@ -31,7 +31,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      <section id="servicios" className="services">
+      <section id="services" className="services">
         <h2>{t('services.title')}</h2>
         <div className="services-grid">
           <div className="service-card">
@@ -49,7 +49,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      <section id="nosotros" className="about">
+      <section id="about" className="about">
         <h2>{t('about.title')}</h2>
         <p className="about-description">{t('about.description')}</p>
         
@@ -60,7 +60,7 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      <section id="contacto" className="contact">
+      <section id="contact" className="contact">
         <h2>{t('contact.title')}</h2>
         <div className="contact-form">
           <input type="text" placeholder={t('contact.name')} />
