@@ -13,11 +13,11 @@ export const teamMembers: TeamMemberType[] = [
   {
     name: "Brian",
     experience: 9,
-    role: "Senior Backend Developer",
-    image: "/images/team/brian.jpg",
-    skills: ["Python", "Django", "PostgreSQL", "Redis", "Kubernetes"],
-    linkedin: "https://linkedin.com/in/brian-dev",
-    github: "https://github.com/brian-dev"
+    role: "Senior Full Stack Developer",
+    image: "/data/brian-garcia.jpg",
+    skills: ["Typescript", "Java", "Python", "AWS", "Node", "Docker"],
+    linkedin: "https://www.linkedin.com/in/brian-garc%C3%ADa-489281163/",
+    github: "https://github.com/brianegarcia"
   },
   {
     name: "Fede",
