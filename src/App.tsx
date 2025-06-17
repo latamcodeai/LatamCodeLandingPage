@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <nav className="navbar">
-        <div className="logo">LatamCodeAI</div>
+        <a href="#home" className="logo">LatamCodeAI</a>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <ul className="nav-links">
             <li><a href="#home">{t('nav.home')}</a></li>
