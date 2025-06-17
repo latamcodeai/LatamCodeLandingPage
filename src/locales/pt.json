@@ -38,5 +38,8 @@
   },
   "footer": {
     "copyright": "© 2025 LatamCodeAI. Todos os direitos reservados."
+  },
+  "team": {
+    "experience": "{{years}} anos de exp"
   }
 } 
