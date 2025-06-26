@@ -4,15 +4,35 @@ import './App.css';
 import { TeamMember } from './components/TeamMember';
 import { teamMembers } from './data/team';
 import LanguageSelector from './components/LanguageSelector';
+import { useState } from 'react';
 
 const App: React.FC = () => {
   const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="App">
       <nav className="navbar">
-        <a href="#home" className="logo">LatamCodeAI</a>
         <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="/logo.png" alt="Logo" width={50} height={50} />
+          <a href="#home" className="logo">LatamCodeAI</a>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            type="button"
+            className="toggle-button"
+            aria-label="Toggle menu"
+            aria-expanded={isOpen}
+          >
+            <svg className="toggle-button-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              {isOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
+        <div className="nav-right">
           <ul className="nav-links">
             <li><a href="#home">{t('nav.home')}</a></li>
             <li><a href="#services">{t('nav.services')}</a></li>
@@ -21,6 +41,19 @@ const App: React.FC = () => {
           </ul>
           <LanguageSelector />
         </div>
+        {
+          isOpen && (
+            <div className="nav-right-mobile">
+              <ul className="nav-links">
+                <li><a href="#home">{t('nav.home')}</a></li>
+                <li><a href="#services">{t('nav.services')}</a></li>
+                <li><a href="#about">{t('nav.about')}</a></li>
+                <li><a href="#contact">{t('nav.contact')}</a></li>
+              </ul>
+              <LanguageSelector />
+            </div>
+          )
+        }
       </nav>
 
       <section id="home" className="hero">
@@ -52,7 +85,6 @@ const App: React.FC = () => {
       <section id="about" className="about">
         <h2>{t('about.title')}</h2>
         <p className="about-description">{t('about.description')}</p>
-        
         <div className="team-grid">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} member={member} />

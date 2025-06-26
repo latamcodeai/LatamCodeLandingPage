@@ -58,6 +58,26 @@ body {
   letter-spacing: -0.5px;
 }
 
+.toggle-button {
+  display: none;
+  border: none;
+}
+
+.toggle-button-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.nav-right-mobile {
+  display: none;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -526,7 +546,6 @@ body {
 .language-selector {
   display: flex;
   gap: 0.5rem;
-  margin-left: 2rem;
 }
 
 .lang-btn {
@@ -556,6 +575,25 @@ body {
   .navbar {
     flex-direction: column;
     padding: 1rem;
+  }
+
+  .toggle-button {
+    display: block;
+    position: absolute;
+    right: 16px;
+    background: transparent;
+    color: #FFF;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-right-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 
   .nav-links {
