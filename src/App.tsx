@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
 
 import './App.css';
 import { TeamMember } from './components/TeamMember';
 import { teamMembers } from './data/team';
 import LanguageSelector from './components/LanguageSelector';
-import { useState } from 'react';
 
 const App: React.FC = () => {
   const { t } = useTranslation();
