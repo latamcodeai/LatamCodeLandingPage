@@ -32,9 +32,9 @@ export const teamMembers: TeamMemberType[] = [
     name: "Ema",
     experience: 6,
     role: "Full Stack Developer",
-    image: "/images/team/ema.jpg",
-    skills: ["JavaScript", "React", "Node.js", "MongoDB", "GraphQL"],
-    linkedin: "https://linkedin.com/in/ema-dev",
-    github: "https://github.com/ema-dev"
+    image: "/data/ema.jpeg",
+    skills: ["Java", "Spring boot", "Spring frame", "MongoDB", "PostgreSQL"],
+    linkedin: "https://www.linkedin.com/in/emanuel-leonardo-garcia/",
+    github: "https://github.com/Emkurumin"
   }
 ];
