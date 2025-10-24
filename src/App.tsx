@@ -104,7 +104,7 @@ const App: React.FC = () => {
                     <p>{t('hero.subtitle')}</p>
                     <button
                         className="cta-button"
-                        onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                        onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
                     >
                         {t('hero.cta')}
                     </button>
